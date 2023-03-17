@@ -4,7 +4,7 @@
 #include <HTTPClient.h>
 
 //ID SpreadSheet
-String GOOGLE_SCRIPT_ID = "AKfycbzUiP-tZm0HNR4_NiVev0136QTCk3VglnEM92TB3bx2mtq2h76RbsHwJtdGrXks2xOf"; // Replace by your GAS service id
+String GOOGLE_SCRIPT_ID = "******"; // Replace by your GAS service id
 
 //updated 04.12.2019
 const char * root_ca=\
@@ -64,8 +64,8 @@ String Lampu;
 int value_kontrol, ml_respon;
 
 //Things to change
-const char * ssid = "Tselhome-C9C1";
-const char * password =  "80546557";
+const char * ssid = "******";
+const char * password =  "******";
 
 //Provide the token generation process info.
 #include "addons/TokenHelper.h"
@@ -73,14 +73,14 @@ const char * password =  "80546557";
 #include "addons/RTDBHelper.h"
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyDpin7gf96x0MSSqE0760bEkvncqci1vo0" //karater API
+#define API_KEY "******" //karater API
 
 // Insert RTDB URLefine the RTDB URL */
-#define DATABASE_URL "https://smart-led-c3a7d-default-rtdb.firebaseio.com/" //link firbase
+#define DATABASE_URL "******" //link firbase
 
 //Email
-#define USER_EMAIL "coba@gmail.com";
-#define USER_PASSWORD "12345678";
+#define USER_EMAIL "******";
+#define USER_PASSWORD "******";
 
 //Define Firebase Data object
 FirebaseData fbdo;
@@ -136,7 +136,7 @@ void setup()
   config.database_url = DATABASE_URL;
   config.token_status_callback = tokenStatusCallback; // see addons/TokenHelper.h
   config.database_url = DATABASE_URL;
-  config.signer.tokens.legacy_token = "aywBifeCTG6Pf6jIQOeklLXBLpieHejokIn4hIcP";
+  config.signer.tokens.legacy_token = "******";
 
   #if defined(ESP8266)
     fbdo.setBSSLBufferSize(2048 /* Rx buffer size in bytes from 512 - 16384 */, 2048 /* Tx buffer size in bytes from 512 - 16384 */);
